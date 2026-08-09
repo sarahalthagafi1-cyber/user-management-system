@@ -2,7 +2,7 @@
 
 ##  Project Overview
 
-The User Management System is a simple web-based application developed using PHP and MySQL.
+The User Management System is a simple web based application developed using PHP and MySQL.
 
 The purpose of this project is to demonstrate how a PHP website can connect to a MySQL database, store user information, retrieve data from the database, display it in a web page, and update a user's status.
 
@@ -47,8 +47,8 @@ The table contains:
 
 Each user has a status value:
 
-- `0` = OFF
-- `1` = ON
+- 0 = OFF
+- 1 = ON
 
 The status can be changed using the ON/OFF button in the Action column.
 
@@ -58,7 +58,7 @@ When the button is clicked, the system updates the user's status in the database
 
 Each user receives a unique ID automatically.
 
-The ID column uses MySQL's `AUTO_INCREMENT` feature, which means that a new ID is generated automatically whenever a new user is added.
+The ID column uses MySQL's AUTO_INCREMENT feature, which means that a new ID is generated automatically whenever a new user is added.
 
 ---
 
@@ -77,39 +77,39 @@ This project was developed using the following technologies:
 
 ## ️ Database Structure
 
-The project uses a MySQL database containing a `users` table.
+The project uses a MySQL database containing a users table.
 
 The table contains four columns:
 
-### `id`
+### id
 
-- Data type: `INT`
+- Data type: INT
 - Primary Key
 - AUTO_INCREMENT
 - Used as a unique identifier for each user.
 
-### `name`
+### name
 
-- Data type: `VARCHAR(255)`
+- Data type: VARCHAR(255)
 - Stores the user's name.
 
-### `age`
+### age
 
-- Data type: `INT`
+- Data type: INT
 - Stores the user's age.
 
-### `status`
+### status
 
-- Data type: `INT`
+- Data type: INT
 - Stores the user's current status.
-- `0` represents OFF.
-- `1` represents ON.
+- 0 represents OFF.
+- 1 represents ON.
 
 ---
 
 ##  Project Files
 
-### `index.php`
+### index.php
 
 The main file of the application.
 
@@ -122,7 +122,7 @@ It is responsible for:
 - Displaying users in an HTML table.
 - Toggling the user's status between ON and OFF.
 
-### `db.php`
+### db.php
 
 This file is responsible for establishing the connection between PHP and the MySQL database.
 
@@ -141,8 +141,8 @@ The application follows a simple process:
 2. The user enters an age.
 3. The user clicks the **Submit** button.
 4. PHP receives the submitted data.
-5. PHP sends an `INSERT` query to MySQL.
-6. The new user is stored in the `users` table.
+5. PHP sends an INSERT query to MySQL.
+6. The new user is stored in the users table.
 7. The page reloads.
 8. The new user appears in the table.
 
@@ -151,15 +151,14 @@ The application follows a simple process:
 1. The user clicks the ON/OFF button.
 2. The user's ID is sent to PHP.
 3. PHP retrieves the current status from MySQL.
-4. If the status is `0`, it changes to `1`.
-5. If the status is `1`, it changes to `0`.
+4. If the status is 0, it changes to 1.
+5. If the status is 1, it changes to 0.
 6. The updated value is stored in the database.
 7. The page reloads and displays the new status.
 
 ---
 
 
----
 
 ## Deployment
 
